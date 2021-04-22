@@ -1,1 +1,32 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+
+.desorden {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carta {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+.number {
+  text-align: center;
+  font-size: 120px;
+}
+
+.suit {
+  font-size: 70px;
+  width: 50px;
+  height: 50px;
+}
+
+.invsuit {
+  transform: rotate(180deg);
+  font-size: 70px;
+}
