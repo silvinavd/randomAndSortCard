@@ -1,78 +1,65 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Card</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
-</head>
+  </head>
 
-<body>
-    <!--NAV-->
+  <body>
+    <!--NAV BOTONES-->
     <div class="d-flex flex-row">
-        <div class="p-2">
-            <input type="text" class="form-control" aria-describedby="button-addon4" />
-        </div>
-        <div class="p-2">
-            <button class="btn btn-light float-left" type="submit">
-                Draw
-            </button>
-        </div>
-        <div class="p-2">
-            <button class="btn btn-light float-left" type="submit">
-                Sort
-            </button>
-        </div>
+      <div class="p-2">
+        <input
+          id="input"
+          type="text"
+          class="form-control form-control-sm"
+          aria-describedby="button-addon4"
+        />
+      </div>
+      <div class="p-2">
+        <button class="btn btn-light btn-sm" id="draw">
+          Draw
+        </button>
+      </div>
+      <div class="p-2">
+        <button class="btn btn-secondary btn-sm" id="sort">
+          Sort
+        </button>
+      </div>
+      <div class="p-2">
+        <button class="btn btn-dark btn-sm" id="select">
+          Select
+        </button>
+      </div>
     </div>
 
     <!--CONTAINER-->
+    <div
+      class="w-100 d-flex justify-content-around"
+      id="cartasAleatorias"
+    ></div>
+    <!-- <div class="cardList">
+      <div class="d-flex flex-row">
+        <div class="card">
+          <div class="suit" id="topsuit"></div>
 
-    <div class="desorden">
-        <!-- Cartas -->
-        <div class="carta">
-            <!--SUIT-->
-            <div class="suit" id="topsuit"></div>
-            <!--NUMBER-->
-
-            <div class="number" id="number"></div>
-            <!--INVERSE SUIT-->
-            <div class="invsuit" id="bottomsuit"></div>
+          <div class="number" id="number"></div>
+          <div class="suitinf" id="bottomsuit"></div>
         </div>
-         <div class="carta">
-            <!--SUIT-->
-            <div class="suit" id="topsuit"></div>
-            <!--NUMBER-->
+      </div>
+    </div>-->
+    <h4>CARTAS ORDENADAS BUBBLE</h4>
+    <div class="w-100 d-flex justify-content-around" id="cartasOrdenadas"></div>
 
-            <div class="number" id="number"></div>
-            <!--INVERSE SUIT-->
-            <div class="invsuit" id="bottomsuit"></div>
-        </div>
-    </div>
-
-    <div class="desorden">
-        <!-- Cartas -->
-        <div class="carta">
-            <!--SUIT-->
-            <div class="suit" id="topsuit"></div>
-            <!--NUMBER-->
-
-            <div class="number" id="number"></div>
-            <!--INVERSE SUIT-->
-            <div class="invsuit" id="bottomsuit"></div>
-        </div>
-    </div>
-</body>
-
-</html>
-
-
-
-<!--DIV1-->
-
-</div>
-</body>
-
+    <h4>CARTAS ORDENADAS SELECT</h4>
+    <div class="w-100 d-flex justify-content-around" id="cartasSelect"></div>
+  </body>
 </html>
